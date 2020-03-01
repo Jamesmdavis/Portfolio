@@ -14,6 +14,7 @@ app.use(sassMiddleware({
     outputStyle: 'expanded'
 }));
 app.use(express.static('public'));
+app.use(express.static('views/images'));
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
