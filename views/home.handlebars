@@ -1,38 +1,30 @@
-<section class="section">
-  <div class="block">
-    <h1 class="title">Portfolio</h1>
-  </div>
-</section>
-
-<section class="hero is-dark is-medium has-text-centered">
+<section class="hero is-dark is-fullheight is-bold">
   <div class="hero-body">
     <div class="block">
-      <h1 class="title">About Me</h1>
-    </div>
-
-    <div class="block">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Impedit praesentium expedita maiores ea nostrum accusantium optio quam tempora quod nemo.</p>
-          </div>
-        </div>
+      <div class="container is-fluid">
+        <p class="about-me-p">
+          My name is <strong class="name">James Davis</strong>.
+        </p>
+        <p class="about-me-p">
+          I'm a full-stack web developer.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="block">
-    <h1 class="title">My Projects</h1>
-  </div>
-</section>
-
-<section class="hero is-info has-text-centered">
+<section class="hero is-primary is-bold is-medium has-text-centered">
   <div class="hero-body">
     <div class="block">
-      <div class="container-slider">
+      <div class="container">
+        <div class="position-relative">
+          <h1 class="title is-1 is-bold projects-position-absolute"><strong>Projects</strong></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block container-slider">
         <div class="container-flex transition">
           <div class="item">
             <div class="block">
@@ -67,54 +59,36 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="block">
-      <div class="container">
-        <div class="columns is-fluid">
-          <div class="column is-full">
-            <div class="box overflow-hidden">
-              <div class="container-slider">
-                <div class="container-flex transition">
-                  <div class="item">
-                    <p class="subtitle has-text-black">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="item">
-                    <p class="subtitle has-text-black">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="item">
-                    <p class="subtitle has-text-black">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<section>
+  <div class="block">
+    <div class="container">
+      <div class="position-relative">
+        <div class="notification is-dark position-absolute">
+          <nav class="pagination">
+            <button class="pagination-previous button is-dark is-outlined is-inverted" id="button-previous" disabled>Previous</button>
+            <button class="pagination-next button is-dark is-outlined is-inverted" id="button-next">Next page</button>
+            <ul class="pagination-list" id="pagination-list-buttons">
+              <li>
+                <button class="pagination-link is-current" id="button-1">1</button>
+              </li>
+              <li>
+                <button class="pagination-link" id="button-2">2</button>
+              </li>
+              <li>
+                <button class="pagination-link" id="button-3">3</button>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </div>
-
-    <div class="block">
-      <div class="notification is-dark">
-        <nav class="pagination">
-          <button class="pagination-previous" id="button-previous" disabled>Previous</button>
-          <button class="pagination-next" id="button-next">Next page</button>
-          <ul class="pagination-list" id="pagination-list-buttons">
-            <li>
-              <button class="pagination-link is-current" id="button-1">1</button>
-            </li>
-            <li>
-              <button class="pagination-link" id="button-2">2</button>
-            </li>
-            <li>
-              <button class="pagination-link" id="button-3">3</button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer is-bold">
   <div class="content has-text-centered">
     <p>
       Powered by <strong>Bulma</strong>

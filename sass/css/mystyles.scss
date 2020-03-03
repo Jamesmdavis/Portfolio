@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import "../../node_modules/bulma/bulma.sass";
 
+body {
+    background-color: lightgrey;
+}
+
 .transition {
     transform: translateX(0);
     transition: transform 1s;
@@ -8,7 +12,7 @@
 
 .container-slider {
     position: relative;
-    height: 15vh;
+    height: 25vh;
 
     .container-flex {
         display: flex;
@@ -18,7 +22,7 @@
         width: 300%;
 
         .item {
-            width: 15%;
+            width: 20%;
         }
     }
 }
@@ -26,5 +30,30 @@
 .overflow-hidden {
     overflow: hidden;
 }
+
+.about-me-p {
+    font-size: 60px;
+
+    strong {
+        color: darkorchid;
+    }
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    width: 100%;
+    bottom: -5vh;
+}
+
+.projects-position-absolute {
+    position: absolute;
+    width: 100%;
+    bottom: 10vh;
+}
+
 
 

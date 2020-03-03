@@ -10803,6 +10803,10 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+body {
+  background-color: lightgrey;
+}
+
 .transition {
   transform: translateX(0);
   transition: transform 1s;
@@ -10810,7 +10814,7 @@ label.panel-block:hover {
 
 .container-slider {
   position: relative;
-  height: 15vh;
+  height: 25vh;
 }
 
 .container-slider .container-flex {
@@ -10822,9 +10826,33 @@ label.panel-block:hover {
 }
 
 .container-slider .container-flex .item {
-  width: 15%;
+  width: 20%;
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.about-me-p {
+  font-size: 60px;
+}
+
+.about-me-p strong {
+  color: darkorchid;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  width: 100%;
+  bottom: -5vh;
+}
+
+.projects-position-absolute {
+  position: absolute;
+  width: 100%;
+  bottom: 10vh;
 }
