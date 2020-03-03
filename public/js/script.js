@@ -11,7 +11,7 @@ let slideValue = 0;
 buttonNext.addEventListener('click', () => {
     slideValue += 100;
     for(let slide of slides) {
-        slide.style.transform = "translateX(" + slideValue + "%)";
+        slide.style.transform = "translateX(" + slideValue/3 + "%)";
         console.log(slide);
     }
 
@@ -22,7 +22,7 @@ buttonNext.addEventListener('click', () => {
 buttonPrevious.addEventListener('click', () => {
     slideValue -= 100;
     for(let slide of slides) {
-        slide.style.transform = "translateX(" + slideValue + "%)";
+        slide.style.transform = "translateX(" + slideValue/3 + "%)";
         console.log(slide);
     }
 
@@ -34,7 +34,7 @@ for(let i = 0; i < paginationListButtons.length; i++) {
     paginationListButtons[i].addEventListener('click', () => {
         slideValue = slideValue + ((i - currentIndex) * 100);
         for(let slide of slides) {
-            slide.style.transform = "translateX(" + slideValue + "%)";
+            slide.style.transform = "translateX(" + slideValue/3 + "%)";
             console.log(slide);
         }
 

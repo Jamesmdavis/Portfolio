@@ -10808,13 +10808,23 @@ label.panel-block:hover {
   transition: transform 1s;
 }
 
-.slide-three-columns {
-  width: 300%;
-  transform: translateX(-66%);
+.container-slider {
+  position: relative;
+  height: 15vh;
 }
 
-.container-absolute {
+.container-slider .container-flex {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
-  width: 100%;
-  left: 0;
+  left: -200%;
+  width: 300%;
+}
+
+.container-slider .container-flex .item {
+  width: 15%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

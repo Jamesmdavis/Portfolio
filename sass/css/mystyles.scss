@@ -6,13 +6,25 @@
     transition: transform 1s;
 }
 
-.slide-three-columns {
-    width: 300%;
-    transform: translateX(-66%);
+.container-slider {
+    position: relative;
+    height: 15vh;
+
+    .container-flex {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        left: -200%;
+        width: 300%;
+
+        .item {
+            width: 15%;
+        }
+    }
 }
 
-.container-absolute {
-    position: absolute;
-    width: 100%;
-    left: 0;
+.overflow-hidden {
+    overflow: hidden;
 }
+
+
