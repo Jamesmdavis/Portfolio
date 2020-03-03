@@ -10802,3 +10802,19 @@ label.panel-block:hover {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
 }
+
+.transition {
+  transform: translateX(0);
+  transition: transform 1s;
+}
+
+.slide-three-columns {
+  width: 300%;
+  transform: translateX(-66%);
+}
+
+.container-absolute {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}

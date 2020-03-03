@@ -1,2 +1,18 @@
 @charset "utf-8";
 @import "../../node_modules/bulma/bulma.sass";
+
+.transition {
+    transform: translateX(0);
+    transition: transform 1s;
+}
+
+.slide-three-columns {
+    width: 300%;
+    transform: translateX(-66%);
+}
+
+.container-absolute {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
