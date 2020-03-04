@@ -10814,12 +10814,13 @@ body {
 
 .container-slider {
   position: relative;
-  height: 25vh;
+  height: 15vh;
 }
 
 .container-slider .container-flex {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: absolute;
   left: -200%;
   width: 300%;
@@ -10845,14 +10846,16 @@ body {
   position: relative;
 }
 
-.position-absolute {
+.nav-position-absolute {
   position: absolute;
   width: 100%;
-  bottom: -5vh;
+  bottom: -8%;
+  left: 0;
 }
 
 .projects-position-absolute {
   position: absolute;
   width: 100%;
-  bottom: 10vh;
+  top: 10%;
+  left: 0;
 }
