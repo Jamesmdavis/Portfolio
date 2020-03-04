@@ -1,5 +1,6 @@
 const buttonPrevious = document.getElementById('button-previous');
 const buttonNext = document.getElementById('button-next');
+const buttonProjects = document.getElementById('button-projects');
 
 const paginationListButtons = document.getElementById('pagination-list-buttons')
     .getElementsByClassName('pagination-link');
@@ -7,6 +8,14 @@ const slides = document.getElementsByClassName('transition');
 
 let currentIndex = 0;
 let slideValue = 0;
+
+buttonProjects.addEventListener('click', () => {
+    window.scrollBy({
+        top: window.innerHeight,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
 
 buttonNext.addEventListener('click', () => {
     slideValue += 100;
