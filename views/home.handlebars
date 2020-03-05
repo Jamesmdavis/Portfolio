@@ -11,10 +11,11 @@
       </div>
     </div>
 
-    <div class="block button-position-absolute" id="button-projects">
+    <div class="block button-position-absolute">
       <div class="container">
         <div class="projects-button-width">
-          <div class="button is-fullwidth is-large is-dark is-outlined is-inverted">Projects</div>
+          <div class="button is-fullwidth is-large is-dark is-outlined is-inverted"
+            id="button-projects">Projects</div>
         </div>
       </div>
     </div>
@@ -23,30 +24,58 @@
 
 <section class="hero is-primary is-bold is-fullheight has-text-centered">
   <div class="hero-body position-relative">
+    <div class="block projects-position-absolute">
+      <div class="container">
+        <h1 class="title is-1">Projects</h1>
+      </div>
+    </div>
+
     <div class="block slider-position-absolute">
       <div class="container">
         <div class="container-slider transition">
           <div class="item">
-            <div class="block">
-              <h1 class="title is-1">Hearthstone Deck Builder</h1>
-            </div>
-            <div class="block">
-              <p class="subtitle is-3">React JS / Node JS / CSS</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="block">
-              <h1 class="title is-1">Seize Command</h1>
-            </div>
-            <div class="block">
-              <p class="subtitle is-3">Unity Engine / C# / Node JS</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="block">
+            <div class="overlay-container position-relative">
               <figure class="image is-4x3">
                 <img class="my-image" src="coding 4x3.jpg" alt="No Image">
               </figure>
+              <div class="overlay">
+              </div>
+              <div class="overlay-text-title">
+                Church Website
+              </div>
+              <div class="overlay-text-link">
+                <a target="_blank" href="https://github.com/jamesmdavis/FullStack" class="button is-dark is-outlined is-inverted">Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="overlay-container position-relative">
+              <figure class="image is-4x3">
+                <img class="my-image" src="coding 4x3.jpg" alt="No Image">
+              </figure>
+              <div class="overlay notification is-info is-bold">
+              </div>
+              <div class="overlay-text-title">
+                HS Deck Builder
+              </div>
+              <div class="overlay-text-link">
+                <a target="_blank" href="https://github.com/anchovey707/HS_Deck_Builder" class="button is-dark is-outlined is-inverted">Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="overlay-container position-relative">
+              <figure class="image is-4x3">
+                <img class="my-image" src="coding 4x3.jpg" alt="No Image">
+              </figure>
+              <div class="overlay notification is-info is-bold">
+              </div>
+              <div class="overlay-text-title">
+                Seize Command
+              </div>
+              <div class="overlay-text-link">
+                <a target="_blank" href="https://github.com/jamesmdavis/SeizeCommand" class="button is-dark is-outlined is-inverted">Link</a>
+              </div>
             </div>
           </div>
         </div>
@@ -56,7 +85,7 @@
     <div class="block nav-position-absolute">
       <div class="container">
         <div class="notification is-dark">
-          <nav class="pagination">
+          <nav class="pagination is-rounded">
             <button class="pagination-previous button is-dark is-outlined is-inverted" id="button-previous" disabled>Previous</button>
             <button class="pagination-next button is-dark is-outlined is-inverted" id="button-next">Next page</button>
             <ul class="pagination-list" id="pagination-list-buttons">
