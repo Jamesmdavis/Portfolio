@@ -10828,37 +10828,12 @@ body {
   min-height: 240px;
 }
 
-.my-image {
-  width: auto;
-  height: auto;
-  max-width: 640px;
-  max-height: 480px;
-  min-width: 320px;
-  min-height: 240px;
-}
-
-.overlay-container {
+.container-slider .item .overlay-container {
   overflow: hidden;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.overlay-container:hover .overlay {
-  opacity: 1;
-}
-
-.overlay-container:hover .overlay-text-title {
-  top: 5%;
-  opacity: 1;
-  transition-delay: 0.3s;
-}
-
-.overlay-container:hover .overlay-text-link {
-  bottom: 5%;
-  opacity: 1;
-  transition-delay: 0.3s;
-}
-
-.overlay {
+.container-slider .item .overlay-container .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -10871,7 +10846,7 @@ body {
   transition: all 0.8s ease-in-out;
 }
 
-.overlay-text-title {
+.container-slider .item .overlay-container .overlay-text-title {
   color: white;
   font-size: 30px;
   position: absolute;
@@ -10883,7 +10858,7 @@ body {
   transition-delay: 0s;
 }
 
-.overlay-text-link {
+.container-slider .item .overlay-container .overlay-text-link {
   position: absolute;
   opacity: 0;
   left: 0;
@@ -10891,6 +10866,22 @@ body {
   width: 100%;
   transition: all 0.5s ease;
   transition-delay: 0s;
+}
+
+.container-slider .item .overlay-container:hover .overlay {
+  opacity: 1;
+}
+
+.container-slider .item .overlay-container:hover .overlay-text-title {
+  top: 5%;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.container-slider .item .overlay-container:hover .overlay-text-link {
+  bottom: 5%;
+  opacity: 1;
+  transition-delay: 0.3s;
 }
 
 .about-me-p {
