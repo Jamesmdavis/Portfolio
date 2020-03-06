@@ -10821,7 +10821,11 @@ body {
 }
 
 .container-slider .item {
-  width: 500px;
+  width: 15%;
+  max-width: 640px;
+  max-height: 480px;
+  min-width: 320px;
+  min-height: 240px;
 }
 
 .my-image {
@@ -10829,6 +10833,8 @@ body {
   height: auto;
   max-width: 640px;
   max-height: 480px;
+  min-width: 320px;
+  min-height: 240px;
 }
 
 .overlay-container {
@@ -10841,13 +10847,13 @@ body {
 }
 
 .overlay-container:hover .overlay-text-title {
-  transform: translate(-50%, -350%);
+  top: 5%;
   opacity: 1;
   transition-delay: 0.3s;
 }
 
 .overlay-container:hover .overlay-text-link {
-  transform: translate(-50%, 250%);
+  bottom: 5%;
   opacity: 1;
   transition-delay: 0.3s;
 }
@@ -10861,7 +10867,6 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: #0F2027;
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   transition: all 0.8s ease-in-out;
 }
@@ -10870,20 +10875,20 @@ body {
   color: white;
   font-size: 30px;
   position: absolute;
-  top: 50%;
-  left: 50%;
   opacity: 0;
-  transform: translate(-50%, -500%);
+  left: 0;
+  top: -20%;
+  width: 100%;
   transition: all 0.5s ease;
   transition-delay: 0s;
 }
 
 .overlay-text-link {
   position: absolute;
-  top: 50%;
-  left: 50%;
   opacity: 0;
-  transform: translate(-50%, 400%);
+  left: 0;
+  bottom: -20%;
+  width: 100%;
   transition: all 0.5s ease;
   transition-delay: 0s;
 }
@@ -10925,13 +10930,6 @@ body {
   left: 0;
 }
 
-.button-position-absolute {
-  position: absolute;
-  width: 100%;
-  bottom: 20%;
-  left: 0;
-}
-
 .slider-position-absolute {
   position: absolute;
   width: 100%;
@@ -10946,8 +10944,4 @@ hr {
 
 .hr-width {
   width: 25%;
-}
-
-.projects-button-width {
-  width: 20%;
 }
