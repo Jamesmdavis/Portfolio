@@ -10807,9 +10807,90 @@ body {
   background-color: lightgrey;
 }
 
+body * {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .transition {
   transform: translateX(0);
   transition: transform 1s;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  width: 300%;
+  transform: translateX(calc(-100% * (2/3)));
+}
+
+.slide-container .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-container .box-container .box-custom {
+  background-color: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 2px;
+  border: none;
+  width: 90%;
+}
+
+.slide-container .box-container .box-custom .box-inner-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-left-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: black;
+  width: 48%;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-left-container .project-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-left-container .project-description {
+  font-size: 20px;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-right-container .box-right-image {
+  max-width: 640px;
+  max-height: 479px;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-right-container .box-right-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-right-container .box-right-button-container .visit-button {
+  color: black;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 10px 0px;
+  width: 45%;
+  transition: all 0.5s ease;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-right-container .box-right-button-container .visit-button:hover {
+  color: white;
+  background-color: black;
 }
 
 .container-slider {

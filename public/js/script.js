@@ -1,6 +1,7 @@
 const buttonPrevious = document.getElementById('button-previous');
 const buttonNext = document.getElementById('button-next');
 const buttonProjects = document.getElementById('button-projects');
+const slider = document.getElementById('slides');
 
 const paginationListButtons = document.getElementById('pagination-list-buttons')
     .getElementsByClassName('pagination-link');
@@ -8,6 +9,9 @@ const slides = document.getElementsByClassName('transition');
 
 let currentIndex = 0;
 let slideValue = 0;
+
+let currentTransform = -2/3 * 100;
+let incrementTransform = 1/3 * 100;
 
 buttonProjects.addEventListener('click', () => {
     window.scrollBy({
@@ -18,22 +22,29 @@ buttonProjects.addEventListener('click', () => {
 });
 
 buttonNext.addEventListener('click', () => {
-    slideValue += 100;
+    currentTransform = currentTransform + incrementTransform;
+
+    slider.style.transform = "translateX(" + currentTransform + "%)";
+/*
     for(let slide of slides) {
         slide.style.transform = "translateX(" + slideValue/3 + "%)";
         console.log(slide);
     }
-
+*/
     changeCurrentButton(true);
     redefineButtons();
 });
 
 buttonPrevious.addEventListener('click', () => {
-    slideValue -= 100;
+    currentTransform = currentTransform - incrementTransform;
+
+    slider.style.transform = "translateX(" + currentTransform + "%)";
+    /*
     for(let slide of slides) {
         slide.style.transform = "translateX(" + slideValue/3 + "%)";
         console.log(slide);
     }
+    */
 
     changeCurrentButton(false);
     redefineButtons();
