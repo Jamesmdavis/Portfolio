@@ -2,6 +2,7 @@ const buttonPrevious = document.getElementById('button-previous');
 const buttonNext = document.getElementById('button-next');
 const buttonProjects = document.getElementById('button-projects');
 const slider = document.getElementById('slides');
+const hr = document.getElementById('hr-project');
 
 const paginationListButtons = document.getElementById('pagination-list-buttons')
     .getElementsByClassName('pagination-link');
@@ -48,6 +49,18 @@ buttonPrevious.addEventListener('click', () => {
 
     changeCurrentButton(false);
     redefineButtons();
+});
+
+window.addEventListener('scroll', () => {
+    let top = this.scrollY;
+    console.log(top);
+
+    if(top >= 160) {
+        hr.style.width = "300px";
+    }
+    else {
+        hr.style.width = "0px";
+    }
 });
 
 for(let i = 0; i < paginationListButtons.length; i++) {

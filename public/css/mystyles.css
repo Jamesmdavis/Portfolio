@@ -10821,6 +10821,7 @@ body * {
   justify-content: center;
   width: 300%;
   transform: translateX(calc(-100% * (2/3)));
+  transition: transform 1s ease;
 }
 
 .slide-container .box-container {
@@ -10870,6 +10871,7 @@ body * {
 .slide-container .box-container .box-custom .box-inner-container .box-right-container .box-right-image {
   max-width: 640px;
   max-height: 479px;
+  border-radius: 2px;
 }
 
 .slide-container .box-container .box-custom .box-inner-container .box-right-container .box-right-button-container {
@@ -10975,6 +10977,18 @@ body * {
 
 .projects-title {
   font-size: 60px;
+  margin-bottom: 0px;
+}
+
+hr {
+  margin: 0px;
+  width: 0px;
+  transition: width 0.6s ease;
+}
+
+.hr-div {
+  display: flex;
+  justify-content: center;
 }
 
 .position-relative {
@@ -10998,7 +11012,7 @@ body * {
 .hr-position-absolute {
   position: absolute;
   width: 100%;
-  top: 15%;
+  top: 7%;
   left: 0;
 }
 
