@@ -13,6 +13,7 @@ let slideValue = 0;
 
 let currentTransform = -2/3 * 100;
 let incrementTransform = 1/3 * 100;
+let hrFadedIn = false;
 
 buttonProjects.addEventListener('click', () => {
     window.scrollBy({
@@ -24,28 +25,15 @@ buttonProjects.addEventListener('click', () => {
 
 buttonNext.addEventListener('click', () => {
     currentTransform = currentTransform + incrementTransform;
-
     slider.style.transform = "translateX(" + currentTransform + "%)";
-/*
-    for(let slide of slides) {
-        slide.style.transform = "translateX(" + slideValue/3 + "%)";
-        console.log(slide);
-    }
-*/
+
     changeCurrentButton(true);
     redefineButtons();
 });
 
 buttonPrevious.addEventListener('click', () => {
     currentTransform = currentTransform - incrementTransform;
-
     slider.style.transform = "translateX(" + currentTransform + "%)";
-    /*
-    for(let slide of slides) {
-        slide.style.transform = "translateX(" + slideValue/3 + "%)";
-        console.log(slide);
-    }
-    */
 
     changeCurrentButton(false);
     redefineButtons();
@@ -55,11 +43,9 @@ window.addEventListener('scroll', () => {
     let top = this.scrollY;
     console.log(top);
 
-    if(top >= 160) {
+    if(top >= 400) {
         hr.style.width = "300px";
-    }
-    else {
-        hr.style.width = "0px";
+        hr.style.opacity = "1";
     }
 });
 
