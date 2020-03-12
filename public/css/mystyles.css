@@ -10818,7 +10818,7 @@ body * {
 
 .slide-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 300%;
   transform: translateX(calc(-100% * (2/3)));
   transition: transform 1s ease;
@@ -10828,6 +10828,7 @@ body * {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
 }
 
 .slide-container .box-container .box-custom {
@@ -10835,7 +10836,6 @@ body * {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 2px;
   border: none;
-  width: 90%;
 }
 
 .slide-container .box-container .box-custom .box-inner-container {
@@ -10854,6 +10854,11 @@ body * {
 
 .slide-container .box-container .box-custom .box-inner-container .box-left-container .project-title {
   font-size: 30px;
+}
+
+.slide-container .box-container .box-custom .box-inner-container .box-left-container .project-tech {
+  font-size: 15px;
+  font-style: italic;
   margin-bottom: 20px;
 }
 
@@ -10877,6 +10882,7 @@ body * {
 .slide-container .box-container .box-custom .box-inner-container .box-right-container .box-right-button-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   margin-top: 20px;
 }
 
@@ -10999,7 +11005,35 @@ hr {
   width: 80px;
   height: 60px;
   cursor: pointer;
-  transform: rotate(180deg);
+}
+
+.icon-left .arrow {
+  position: absolute;
+  top: 25px;
+  width: 90%;
+  height: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon-left .arrow::after, .icon-left .arrow::before {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 10px;
+  left: -8px;
+  background-color: #ffffff;
+}
+
+.icon-left .arrow::after {
+  top: -12px;
+  transform: rotate(-45deg);
+}
+
+.icon-left .arrow::before {
+  top: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(45deg);
 }
 
 .icon-right {
@@ -11011,7 +11045,7 @@ hr {
   cursor: pointer;
 }
 
-.arrow {
+.icon-right .arrow {
   position: absolute;
   top: 25px;
   width: 90%;
@@ -11020,7 +11054,7 @@ hr {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.arrow::after, .arrow::before {
+.icon-right .arrow::after, .icon-right .arrow::before {
   content: '';
   position: absolute;
   width: 60%;
@@ -11029,12 +11063,12 @@ hr {
   background-color: #ffffff;
 }
 
-.arrow::after {
+.icon-right .arrow::after {
   top: -12px;
   transform: rotate(45deg);
 }
 
-.arrow::before {
+.icon-right .arrow::before {
   top: 12px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   transform: rotate(-45deg);

@@ -16,7 +16,7 @@ body * {
 
 .slide-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 300%;
     transform: translateX(calc(-100% * (2/3)));
     transition: transform 1s ease;
@@ -25,13 +25,13 @@ body * {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 30%;
     
         .box-custom {
             background-color: white;
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             border-radius: 2px;
             border: none;
-            width: 90%;
     
             .box-inner-container {
                 display: flex;
@@ -47,6 +47,11 @@ body * {
     
                     .project-title {
                         font-size: 30px;
+                    }
+
+                    .project-tech {
+                        font-size: 15px;
+                        font-style: italic;
                         margin-bottom: 20px;
                     }
         
@@ -70,6 +75,7 @@ body * {
                     .box-right-button-container {
                         display: flex;
                         justify-content: space-between;
+                        flex-direction: row-reverse;
                         margin-top: 20px;
     
                         .visit-button {
@@ -201,7 +207,35 @@ hr {
     width: 80px;
     height: 60px;
     cursor: pointer;
-    transform: rotate(180deg);
+
+    .arrow {
+        position: absolute;
+        top: 25px;
+        width: 90%;
+        height: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    }
+    
+    .arrow::after, .arrow::before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        left: -8px;
+        background-color: #ffffff;
+    }
+    
+    .arrow::after {
+        top: -12px;
+        transform: rotate(-45deg);
+    }
+    
+    .arrow::before {
+        top: 12px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        transform: rotate(45deg);
+    }
 }
 
 .icon-right {
@@ -211,36 +245,38 @@ hr {
     width: 80px;
     height: 60px;
     cursor: pointer;
+    
+    .arrow {
+        position: absolute;
+        top: 25px;
+        width: 90%;
+        height: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    }
+
+    .arrow::after, .arrow::before {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 10px;
+        right: -8px;
+        background-color: #ffffff;
+    }
+    
+    .arrow::after {
+        top: -12px;
+        transform: rotate(45deg);
+    }
+    
+    .arrow::before {
+        top: 12px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        transform: rotate(-45deg);
+    }
 }
 
-.arrow {
-    position: absolute;
-    top: 25px;
-    width: 90%;
-    height: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-}
 
-.arrow::after, .arrow::before {
-    content: '';
-    position: absolute;
-    width: 60%;
-    height: 10px;
-    right: -8px;
-    background-color: #ffffff;
-}
-
-.arrow::after {
-    top: -12px;
-    transform: rotate(45deg);
-}
-
-.arrow::before {
-    top: 12px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-    transform: rotate(-45deg);
-}
 
 .position-relative {
     position: relative;
