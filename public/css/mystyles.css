@@ -10819,6 +10819,14 @@ body * {
   color: darkorchid;
 }
 
+.custom-button {
+  transition: transform 0.5s ease;
+}
+
+.custom-button:active {
+  transform: scale(0.9);
+}
+
 .transition {
   transform: translateX(0);
   transition: transform 1s;
@@ -10885,7 +10893,7 @@ body * {
 
 .slide-container .box-container .box-inner-container .box-right-container .box-right-button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row-reverse;
   margin-top: 20px;
 }
@@ -10903,6 +10911,10 @@ body * {
 .slide-container .box-container .box-inner-container .box-right-container .box-right-button-container .visit-button:hover {
   color: white;
   background-color: black;
+}
+
+.slide-container .box-container .box-inner-container .box-right-container .box-right-button-container .visit-button:active {
+  transform: scale(0.9);
 }
 
 @media only screen and (max-width: 768px) {
@@ -10949,6 +10961,7 @@ hr {
   width: 80px;
   height: 60px;
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
 .arrow-container .icon-left .arrow {
@@ -10980,6 +10993,10 @@ hr {
   transform: rotate(45deg);
 }
 
+.arrow-container .icon-left:active {
+  transform: scale(0.9);
+}
+
 .arrow-container .icon-right {
   position: absolute;
   top: 5vh;
@@ -10987,6 +11004,7 @@ hr {
   width: 80px;
   height: 60px;
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
 .arrow-container .icon-right .arrow {
@@ -11016,6 +11034,10 @@ hr {
   top: 12px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   transform: rotate(-45deg);
+}
+
+.arrow-container .icon-right:active {
+  transform: scale(0.9);
 }
 
 .position-relative {
